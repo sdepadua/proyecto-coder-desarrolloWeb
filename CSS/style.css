@@ -1,0 +1,359 @@
+/* --- Tipografía --- */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* --- ESTILOS INDEX  --- */
+
+.texto-intro {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px; 
+    line-height: 1.6;
+}
+
+.seccion-separada {
+    margin-bottom: 50px;
+}
+
+.imagen-lateral {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* --- ESTILOS DE LA CARD --- */
+
+.shadow-card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.encabezado-rojo {
+    background-color: #D32F2F !important; 
+    color: white !important;
+    padding: 15px;
+}
+
+/* --- ESTILOS DE LA LISTA --- */
+
+.subtitulo-pilares {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.lista-pilares {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-pilares li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee; 
+}
+
+.icono-check {
+    color: #198754; 
+    margin-right: 10px;
+}
+
+/* --- SECCIÓN FINAL --- */
+
+.cta-final {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.cta-texto {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Titulos */
+.texto-rojo {
+    color: red
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(90, 88, 88)
+}
+
+
+/* Imagen de la mujer */
+.contenedor-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contenedor-flex img {
+    margin-right: 50px;
+}
+
+/* Menu navegacion */
+.lista-header {
+
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;      
+    list-style: none;
+    gap: 30px;                
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    height: 100%;
+}
+
+nav {
+    margin-right: 30px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+a {
+    color: white;
+    text-decoration: none
+}
+
+/* Tamaño logo */
+header img {
+    width: 250px;
+}
+
+/* Diseño del header */
+header {
+    background-color: #D32F2F;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contenedor-principal {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.margen-inferior {
+    margin-bottom: 24px;
+}
+
+
+/* Estilo para el botón */
+.boton-cotizar {
+    background-color: #d62828;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+/* estilo imagen casco */
+.imagen-casco,
+.contenedor-flex img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/* --- ESTILOS PÁGINA SERVICIOS--- */
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card-servicio {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    text-align: center;
+}
+
+.icono-servicio {
+    font-size: 3rem;
+    color: #D32F2F;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+.card-text {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.titulo-servicio {
+    font-weight: bold;      
+    margin-bottom: 15px;    
+    color: #333;          
+}
+
+
+/* --- ESTILOS DEL FORMULARIO --- */
+
+/* Contenedor */
+.formulario-contacto {
+    background-color: #f4f4f4; 
+    padding: 30px;            
+    border-radius: 10px;      
+    max-width: 600px;          
+    margin: 0 auto;           
+}
+
+/* Espacio entre campos */
+.grupo-input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* etiquetas */
+.grupo-input label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Inputs, selects y textareas */
+.grupo-input input, 
+.grupo-input select, 
+.grupo-input textarea {
+    padding: 12px;
+    border: 1px solid #ccc;   
+    border-radius: 5px;        
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    width: 100%;               
+    box-sizing: border-box;   
+}
+
+.descripcion-contacto {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+.boton-ancho {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo del footer */
+.footer-rojo {
+    background-color: #D32F2F;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+.iconos-contacto i {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+
+}
+
+/* VISTA MOBILE  */
+@media (max-width: 480px) {
+
+    .contenedor-principal {
+        width: 95%;        
+        margin: 20px auto; 
+    }
+
+    h1 {
+        font-size: 1.8rem;  
+        text-align: center; 
+    }
+
+    /* --- HEADER --- */
+    header {
+        flex-direction: column; 
+        gap: 15px;              
+        padding: 10px;
+        text-align: center;
+    }
+
+    header img {
+        width: 180px; 
+    }
+
+    nav {
+        width: 100%;
+        margin-right: 0; 
+        margin-bottom: 0;
+    }
+
+    .lista-header {
+        flex-direction: column; 
+        gap: 15px;             
+        align-items: center;   
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    /* --- PÁGINA INICIO --- */
+    .contenedor-flex {
+        flex-direction: column; 
+        align-items: center;
+        gap: 30px;
+    }
+
+    .altura-total {
+        align-items: flex-start; 
+    }
+
+    .imagen-lateral, 
+    .imagen-casco {
+        width: 100%;       
+        height: auto;      
+        margin-right: 0;  
+        order: -1;      
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    /* --- PÁGINA SERVICIOS --- */
+    .grid-servicios {
+        grid-template-columns: 1fr; 
+    }
+
+    /* --- CONTACTO --- */
+    .formulario-contacto {
+        padding: 20px; 
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros ART - Contacto</title>
+    
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    
+    <header>
+        <img src="../img/logo.png" alt="Logo">
+
+        <nav>
+            <ul class="lista-header">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios y prevención</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        
+        <h1 class="texto-rojo margen-inferior">Contacto</h1>
+        <p class="descripcion-contacto">Déjanos tu mensaje y un asesor te responderá a la brevedad.</p>
+
+        <form class="formulario-contacto" action="#" method="POST">
+            
+            <div class="grupo-input">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="nombre@gmail.com" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu consulta..."></textarea>
+            </div>
+
+            <button type="submit" class="boton-cotizar boton-ancho">Enviar consulta</button>
+
+        </form>
+
+    </main>
+
+    <footer class="footer-rojo">
+        <div class="iconos-contacto">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <p>Seguinos en las redes</p>
+    </footer>
+
+</body>
+</html>
