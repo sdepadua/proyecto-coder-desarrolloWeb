@@ -1,0 +1,23 @@
+/* sass/_layout.scss */
+
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.contenedor-principal {
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.footer-rojo {
+    flex-shrink: 0;
+}

@@ -1,4 +1,27 @@
 /* _variables.scss */
+/* sass/_layout.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contenedor-principal {
+  flex: 1;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.footer-rojo {
+  flex-shrink: 0;
+}
+
 .card-servicio {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -56,12 +79,6 @@ nav {
   padding: 0;
   margin-right: 20px;
   height: 100%;
-}
-
-.contenedor-principal {
-  width: 90%;
-  max-width: 1200px;
-  margin: 50px auto;
 }
 
 .texto-intro {
@@ -242,7 +259,10 @@ nav {
   color: white;
   text-align: center;
   padding: 30px 0;
-  margin-top: 50px;
+  margin-top: auto;
+}
+.footer-rojo p {
+  margin-bottom: 0;
 }
 .footer-rojo .iconos-contacto i {
   color: white;
@@ -250,7 +270,51 @@ nav {
   margin: 0 15px;
 }
 
-/* --- reponsive --- */
+/* --- responsive tablet --- */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    width: 95%;
+    margin: 30px auto;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+  header img {
+    width: 200px;
+  }
+  header nav {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .lista-header {
+    justify-content: center;
+    margin-right: 0;
+    gap: 20px;
+  }
+  .contenedor-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .contenedor-flex img {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    order: -1;
+  }
+  .contenedor-flex .lista-pilares {
+    text-align: left;
+    display: inline-block;
+  }
+  .grid-servicios {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+/* --- reponsive celular --- */
 @media (max-width: 480px) {
   .contenedor-principal {
     width: 95%;
